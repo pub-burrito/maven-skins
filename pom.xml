@@ -37,6 +37,17 @@ under the License.
   <name>Maven Skins Aggregator</name>
   <description>Maven Skins Aggregator</description>
 
+  <distributionManagement>
+        <repository>
+            <id>cloud.archiva.internal</id>
+            <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>cloud.archiva.snapshots</id>
+            <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
   <modules>
     <module>maven-skins</module>
     <module>maven-application-skin</module>
