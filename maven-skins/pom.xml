@@ -52,12 +52,16 @@ under the License.
     <url>https://builds.apache.org/job/maven-skins/</url>
   </ciManagement>
 
-  <!-- <distributionManagement>
-    <site>
-      <id>apache.website</id>
-      <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/maven/content/skins</url>
-    </site>
-  </distributionManagement> -->
+  <distributionManagement>
+        <repository>
+            <id>cloud.archiva.internal</id>
+            <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>cloud.archiva.snapshots</id>
+            <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
   <properties>
     <maven.site.path>skins-archives/${project.artifactId}-${project.version}</maven.site.path>

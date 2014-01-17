@@ -46,6 +46,17 @@ under the License.
     <url>http://jira.codehaus.org/browse/MSKINS/component/12532</url>
   </issueManagement>
 
+  <distributionManagement>
+        <repository>
+            <id>cloud.archiva.internal</id>
+            <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>cloud.archiva.snapshots</id>
+            <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
   <profiles>
     <profile>
       <id>run-its</id>

@@ -44,6 +44,17 @@
     <url>http://jira.codehaus.org/browse/MSKINS/component/15253</url>
   </issueManagement>
 
+  <distributionManagement>
+        <repository>
+            <id>cloud.archiva.internal</id>
+            <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/internal/</url>
+        </repository>
+        <snapshotRepository>
+            <id>cloud.archiva.snapshots</id>
+            <url>http://archiva.cliff.cloudburrito.com:8080/archiva/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
   <contributors>
     <!-- in alphabetical order -->
     <contributor>
