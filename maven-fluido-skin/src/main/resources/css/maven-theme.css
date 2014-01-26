@@ -88,3 +88,9 @@ li.pull-right
   margin-left: 3px;
   margin-right: 3px;
 }
+
+
+.icon-sml
+{
+	min-width: 16px;
+}
