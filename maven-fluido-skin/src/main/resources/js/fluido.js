@@ -22,10 +22,10 @@ jQuery( document ).ready( function()
     // initialize the dropdown menu if found
     $( '.topbar' ).dropdown();
     
-    $(".prettyprint").each( function() {
-    	$this = $(this);
+    $(".prettyprint").each( function(c) {
+    	$this = $(c);
     	
-    	if ($this.text().length() > 100 * 1024)
+    	if ($this.text().length > 100 * 1024)
 		{
     		$this.removeClass("prettyprint");
 		}
